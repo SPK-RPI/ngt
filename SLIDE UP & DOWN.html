@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("#div1").slideDown("slow");
+                $("#div2").slideDown("slow");
+                $("#div3").slideDown("slow");
+            });
+            $("#button2").click(function () {
+                $("#div1").slideUp("slow");
+                $("#div2").slideUp("slow");
+                $("#div3").slideUp("slow");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>Demonstrate slideUp() and slideDown() with different parameters</p>
+    <button id=button1>Click to slide down boxes</button>
+    <button id=button2>Click to slide up boxes</button>
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+    <div id="div2" style="width:80px;height:80px;display:none;background-color:blue;"></div><br>
+    <div id="div3" style="width:80px;height:80px;display:none;background-color:yellow;"></div><br>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("p").before("<b> Text</b>");
+            });
+            $("#button2").click(function () {
+                $("ol").after(" Item");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>Hello World</p>
+    <p>Have a good day!!!</p>
+    <ol>
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+    </ol>
+    <button id="button1">Prepend Text</button>
+    <button id="button2">Prepend List Values</button>
+</body>
+
+</html>
